@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>my feedback form </title>
+</head>
+<link rel="stylesheet" href="/styles.css">
+
+<body>
+
+    <div class="main-contaner">
+<form onsubmit="submitForm(event)">
+            <div class="contaner">
+                <label for="name_label">
+                    <h1> My Feedback Form </h1>
+
+                    <ul>
+                        <li>
+                            Name: <input type="text" name="text" id="name_label">
+                        </li>
+                    </ul>
+                </label>
+            </div>
+
+            <div class="email-label">
+                <label for="email_label">
+                    <ul>
+                        <li>
+                            Email: <input type="email" name="email" id="email_label">
+                        </li>
+                    </ul>
+                </label>
+            </div>
+
+            <div class="password-label">
+                <label for="password_label">
+                    <ul>
+                        <li>
+                            Password : <input type="password" name="password" id="password_label">
+                        </li>
+                    </ul>
+                </label>
+            </div>
+
+            <br>
+
+            <div class="checkbox">
+                <div>
+                    <ul>
+                        <li>
+                            Please check all the emotions that apply to you
+                        </li>
+                        <br>
+                        <label for="angry_label">
+                            <li>
+                                Angry <input type="checkbox" name="checkbox" id="angry_label">
+                            </li>
+                        </label>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="sad_label">
+                        <ul>
+                            <li>
+                                Sad <input type="checkbox" name="sad" id="sad_label">
+                        </ul>
+                    </label>
+                </div>
+
+                <div>
+
+                    <label for="happy_label">
+                        <ul>
+                            <li>
+                                Happy <input type="checkbox" name="happy" id="happy_label">
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="ambivalent_label">
+                        <ul>
+                            <li>
+                                Ambivalent <input type="checkbox" name="ambivalent" id="ambivalent_label">
+                            </li>
+                        </ul>
+
+                    </label>
+                </div>
+
+            </div>
+
+
+            <div class=" Choose">
+                <div>
+                    <ul>
+                        <li>
+                            How satisfied were you with our services?
+                        </li>
+                    </ul>
+                    <label for="Very_satisfied_label">
+                        <ul>
+                            <li>
+                                Very satisfied <input type="radio" name="radio" id="Very_satisfied_label">
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="Satisfied_label">
+                        <ul>
+                            <li>
+                                Satisfied <input type="radio" name="radio" id="Satisfied_label">
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="Didn't_care_labrl">
+                        <ul>
+                            <li>
+                                Didn't care <input type="radio" name="radio" id="Didn't_care_labrl">
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="Very_dissatisfied_label">
+                        <ul>
+                            <li>
+                                Very dissatisfied <input type="radio" name="radio" id="Very_dissatisfied_label">
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+
+            <div class="comments-box">
+                <label>
+                    <ul>
+                        <li>
+                            Futher comments: <textarea name="additional_note" id="additional_note_label"></textarea>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+
+            <div class="bio">
+                <label for="bio_label">
+                    <ul>
+                        <li>
+                            Bio photo: <input type="text" id="bio_label">
+                            <button>Choose...</button>
+
+                        </li>
+                    </ul>
+                </label>
+            </div>
+
+            <div class="location">
+                <label>
+                    <ul>
+                        <li>
+                            <label for="location">Location visited:</label>
+                            <select id="location" name="location">
+                                <option value="null">Select location</option>
+                                <option value="newyork">karachi</option>
+                                <option value="london">Hyderabad</option>
+                                <option value="paris">Lahore</option>
+                            </select>
+                            <div>
+                                <button type="submit">Submit</button>
+                            </div>
+
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
