@@ -1,24 +1,47 @@
 function submitForm(event) {
 
-    event.preventDefault();
+    // event.preventDefault();
 
-    var name = document.getElementById("name_label").value;
-    var email = document.getElementById("email_label").value;
-    var password = document.getElementById("password_label").value;
+    const name = document.getElementById("name-input").value;
+    const email = document.getElementById("email-input").value;
+    const password = document.getElementById("password-input").value;
 
-    if (name == "") {
+    const emotion = document.querySelector('input[name="emotion"]:checked');
+
+    if (name == "" && email == "" && password == "" && emotion == null) {
+
+        alert("Please complete this form");
+
+    }
+
+    else if (name == "") {
+
         alert("Please enter your name");
+
     }
 
     else if (email == "") {
+
         alert("Please enter your email");
+
     }
 
     else if (password == "") {
+
         alert("Please enter your password");
+
+    }
+
+    else if (emotion == null) {
+
+        alert("Please select your emotion");
+
     }
 
     else {
+
         alert("Form submit ho gaya");
+
     }
+
 }
